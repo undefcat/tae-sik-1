@@ -49,7 +49,7 @@ const useShowConfigPanelEffect = (setShowConfig, code = 'KeyQ') => useEffect(() 
   return () => {
     window.removeEventListener('keydown', handler)
   }
-}, [setShowConfig])
+}, [setShowConfig, code])
 
 const useSetFillTypeEffect = setFillType => useEffect(() => {
   const keyDownHandler = e => {
