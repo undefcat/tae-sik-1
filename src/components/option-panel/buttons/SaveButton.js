@@ -25,7 +25,7 @@ function SaveButton() {
   return (
     <>
       <button type="button" onClick={handleSave}>저장</button>
-      <a download="save.json" ref={ref} />
+      <a download="save.json" ref={ref} style={{visibility: 'hidden'}}/>
     </>
   )
 }
