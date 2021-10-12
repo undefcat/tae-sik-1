@@ -31,7 +31,7 @@ const createUpdateBlock = (target, color) => {
   return { ...color, fill: true }
 }
 
-const useShowConfigPanelEffect = (setShowConfig, code = 'KeyQ') => useEffect(() => {
+const useShowConfigPanelEffect = (setShowConfig, code) => useEffect(() => {
   const handler = e => {
     if (e.code !== code) {
       return
@@ -168,7 +168,7 @@ function App() {
     setWalls(createDefaultWalls())
   }
 
-  useShowConfigPanelEffect(setShowConfig, 'F1')
+  useShowConfigPanelEffect(setShowConfig, 'Escape')
   useSetFillTypeEffect(setFillType)
 
   const provideValue = {
