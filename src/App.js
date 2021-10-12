@@ -3,6 +3,7 @@ import './App.css'
 import AppContext, { createDefaultWalls } from './AppContext'
 import Screen from './components/screen'
 import OptionPanel from './components/option-panel'
+import Fab from './components/fab'
 
 const FILL_TYPE_DEFAULT = 0
 const FILL_TYPE_ROW = 1
@@ -186,6 +187,9 @@ function App() {
         color={color}
         onChangeColor={handleChangeColor}
         visible={showConfig}
+      />
+      <Fab
+        toggleConfigPanel={() => setShowConfig(!showConfig)}
       />
     </AppContext.Provider>
   )

@@ -80,3 +80,14 @@
 #right-wall .blocks {
     transform: rotateX(-.6deg) rotateY(-49deg);
 }
+
+.fab-container.fab-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
+
+.fab-container .fab-button-item {
+    cursor: pointer;
+}
