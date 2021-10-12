@@ -1,4 +1,5 @@
 import { CirclePicker } from 'react-color'
+import './index.css'
 
 const colors = [
   '#877B6780',
@@ -23,12 +24,14 @@ const colors = [
 
 function ColorPicker({ color, onChange }) {
   return (
-    <section>
+    <section id="color-picker">
       <CirclePicker
         color={color}
         colors={colors}
         onChange={onChange}
       />
+      <p>Shift + 클릭: 행 색칠</p>
+      <p>Alt + 클릭: 열 색칠</p>
     </section>
   )
 }

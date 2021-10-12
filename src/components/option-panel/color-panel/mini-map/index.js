@@ -1,5 +1,5 @@
 import Walls from './Walls'
-import { useAppContext } from '../../../common/useAppContext'
+import { useAppContext } from '../../../../common/useAppContext'
 import './index.css'
 
 function MiniMap() {

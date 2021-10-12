@@ -1,5 +1,5 @@
 import Block from './Block'
-import { useAppContext } from '../../../common/useAppContext'
+import { useAppContext } from '../../../../common/useAppContext'
 
 function Blocks({ wallId, blocksId, blocks }) {
   const { trigger } = useAppContext()
