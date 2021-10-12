@@ -27,17 +27,21 @@
 }
 
 #information .up .item.title {
-    flex-grow: 0.5;
+    flex-basis: 6%;
     font-size: 2rem;
     font-weight: bold;
+    color: #aaaaaa;
 }
 
 #information .up .item.content {
-    flex-grow: 2;
+    flex-basis: 15%;
+    font-size: 2.2rem;
+    color: #000000;
 }
 
 #information .up .item.content.address {
-    flex-grow: 3;
+    flex-basis: 31%;
+    font-size: 1.8rem;
 }
 
 #information .up .item:last-child {
