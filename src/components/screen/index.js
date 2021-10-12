@@ -1,4 +1,5 @@
 import Wall from './Wall'
+import Information from './information'
 import { useAppContext } from '../../common/useAppContext'
 
 function Screen() {
@@ -14,6 +15,8 @@ function Screen() {
       </div>
 
       <div className="background" id="pillars" />
+
+      <Information />
     </div>
   )
 }

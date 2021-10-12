@@ -1,0 +1,113 @@
+#information {
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+    width: 1800px;
+    height: 850px;
+    border: 3px solid #000000;
+}
+
+#information .up {
+    position: absolute;
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border-bottom: 3px solid #000000;
+}
+
+#information .up .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000000;
+    height: 100%;
+}
+
+#information .up .item.title {
+    flex-grow: 0.5;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#information .up .item.content {
+    flex-grow: 2;
+}
+
+#information .up .item.content.address {
+    flex-grow: 3;
+}
+
+#information .up .item:last-child {
+    border: none;
+}
+
+#information .down {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    border-top: 3px solid #000000;
+}
+
+#information .down .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000000;
+    height: 100%;
+}
+
+#information .down .item:last-child {
+    border: none;
+}
+
+#information .down .item.employer {
+    flex-grow: 1;
+    color: #eeeeee;
+    font-size: 2rem;
+}
+
+#information .down .item.warning {
+    flex-grow: 2;
+    color: #2c51de;
+    font-size: 2rem;
+}
+
+#information .down .item.logo {
+    display: flex;
+    flex-grow: 1;
+}
+
+#information .down .item.logo .logo-image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../../images/logo.png')
+}
+
+#information .down .item.manager {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#information .down .item.manager .manager {
+    font-size: 2rem;
+}
+
+#information .down .item.manager .manager-top {
+    display: flex;
+    align-items: stretch
+}
+
+#information .down .item.manager .manager-bottom {
+    font-size: 2rem;
+}
