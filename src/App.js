@@ -168,7 +168,7 @@ function App() {
     setWalls(createDefaultWalls())
   }
 
-  useShowConfigPanelEffect(setShowConfig, 'KeyQ')
+  useShowConfigPanelEffect(setShowConfig, 'F1')
   useSetFillTypeEffect(setFillType)
 
   const provideValue = {
