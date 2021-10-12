@@ -1,13 +1,10 @@
 import { Button, Container } from 'react-floating-action-button'
+import DownloadButton from './DownloadButton'
 
 function Fab({ toggleConfigPanel }) {
   return (
     <Container className="fab-button">
-      <Button
-        className="fab-button-item"
-        tooltip="다운로드"
-        icon="fas fa-save"
-      />
+      <DownloadButton />
       <Button
         className="fab-button-item"
         tooltip="옵션패널"
