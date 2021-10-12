@@ -1,6 +1,6 @@
 #wrap {
     position: relative;
-    margin: 0 auto;
+    margin: -100px auto 0 auto;
     width: 1920px;
     height: 1080px;
 }
