@@ -1,30 +1,33 @@
-import { SketchPicker } from 'react-color'
+import { CirclePicker } from 'react-color'
 
-const presetColors = [
-  '#D0021B80',
-  '#F5A62380',
-  '#F8E71C80',
-  '#8B572A80',
-  '#7ED32180',
-  '#41750580',
-  '#BD10E080',
-  '#9013FE80',
-  '#4A90E280',
-  '#50E3C280',
-  '#B8E98680',
-  '#00000080',
-  '#4A4A4A80',
-  '#9B9B9B80',
-  '#FFFFFF80',
+const colors = [
+  '#877B6780',
+  '#B2A59280',
+  '#CDC1AE80',
+  '#A6251080',
+  '#A1221080',
+  '#DFBAB980',
+  '#CF5D1780',
+  '#D0844F80',
+  '#D8AE8D80',
+  '#8E688B80',
+  '#B091AB80',
+  '#CCB5C380',
+  '#2C823F80',
+  '#76B79480',
+  '#A5CEAF80',
+  '#2F427A7F',
+  '#6798B980',
+  '#A7BDC480',
 ]
 
 function ColorPicker({ color, onChange }) {
   return (
     <section>
-      <SketchPicker
+      <CirclePicker
         color={color}
+        colors={colors}
         onChange={onChange}
-        presetColors={presetColors}
       />
     </section>
   )
